@@ -1,0 +1,66 @@
+
+
+:root {
+    --space-vertical: 20px;
+    --space-horizontal: 80%;
+  }
+  
+  .principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: #c2bcbc;
+    box-shadow: 0 0 10px rgba(148, 144, 144, 0.2);
+    text-align: center;
+  }
+  
+  .div-nom,
+  .div-prenom,
+  .div-mail,
+  .div-Téléphone,
+  .div-sujet,
+  .div-message {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #3a3939;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .button {
+    background-color: var(--tertiary-color);
+    color: #585656;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: inset -2px -2px 3px rgba(8, 8, 8, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+    grid-column: span 2
+  }
+  
+  .div-sujet {
+      grid-column: span 2;
+    }
+  
+    .email-div,
+    .message-div {
+      grid-column: span 2;
+    }
